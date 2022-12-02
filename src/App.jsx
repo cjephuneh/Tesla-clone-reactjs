@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/tesla.svg";
+import logo from "./assets/tesla.svg";
 
 function App() {
   return (
