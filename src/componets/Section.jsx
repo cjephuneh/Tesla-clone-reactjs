@@ -1,9 +1,15 @@
-
+import styled from 'styled-components'
 const Section = () =>{
     return(
-        <h1>heloo</h1>
+        <wrap>
+
+        </wrap>
     )
 }
 
 
 export default Section
+
+const Wrap = styled.div`
+        
+`
