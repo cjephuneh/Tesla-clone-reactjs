@@ -1,21 +1,25 @@
 import './section.css'
 import styled from 'styled-components' 
 import { ButtonGroup } from '@material-ui/core'
-const Section = () =>{
+const Section = ({title, description, backgroundImg, leftBtnText, rightBtnText}) =>{
     return(
-        <Wrap>
+        <Wrap bgImage={backgroundImg} className="bgImage">
             <ItemText>
-                <h1>Model S</h1>
-                <p>Schedule a Test Drive</p>
+                <h1>{ title }</h1>
+                <p>{ description }</p>
             </ItemText>
-            <ButtonGroup className='group'>
-                <LeftButton>
-                    Custom Order
-                </LeftButton>
-                <RightButton>
-                    Existing Order
-                </RightButton>
-            </ButtonGroup>
+            <Buttons>
+                <ButtonGroup className='group'>
+                    <LeftButton>
+                        {leftBtnText}
+                    </LeftButton>
+                    { rightBtnText &&
+                        <RightButton>
+                            {rightBtnText}
+                        </RightButton>
+                    }
+                </ButtonGroup>
+            </Buttons>
             <DownArrow src="/images/down-arrow.svg"/>
             
         </Wrap>
@@ -29,13 +33,13 @@ const Wrap = styled.div`
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    background-positon: center;
-    background-repeat: no-repeat;
-    background-image: url('/images/model-s.jpg');  
+    background-position: center;
+    background-repeat: no-repeat;    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-image: ${props => `url("/images/${props.bgImage}")`} 
 `
 
 const ItemText = styled.div`
@@ -44,8 +48,9 @@ const ItemText = styled.div`
 
 `
 const DownArrow = styled.img`
-    margin-top: 20px;
     height: 40px;
+    overflow-x: hidden;
+    animation: animatedDown infinite 1.5s;
 
 `
 
@@ -62,9 +67,16 @@ const LeftButton = styled.div`
     text-transform: uppercase;
     font-size: 12px;
     cursor: pointer;
+    margin: 18px;
     
 `
 const RightButton = styled(LeftButton)`
+    background: white;
+    opacity 0.6s;
+    color: black;
 `
 
+
+const Buttons = styled.div`
+`
 
