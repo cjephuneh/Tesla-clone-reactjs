@@ -10,6 +10,9 @@ body{
     align-items: center;
     overflow-x: hidden;
 }
+a{
+    text-transform: none;
+}
 
 @keyframes animateDown {
     0%, 20%, 50%, 80%, 100%{
