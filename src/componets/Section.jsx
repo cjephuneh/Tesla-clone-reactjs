@@ -52,6 +52,7 @@ const DownArrow = styled.img`
     overflow-x: hidden;
     animation: animatedDown infinite 1.5s;
 
+
 `
 
 const LeftButton = styled.div`
@@ -62,12 +63,12 @@ const LeftButton = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
+    border-radius: 10px;
     opacity: 0.85;
     text-transform: uppercase;
     font-size: 12px;
     cursor: pointer;
-    margin: 18px;
+    margin: 29px;
     
 `
 const RightButton = styled(LeftButton)`
