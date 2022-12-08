@@ -125,7 +125,7 @@ const BurgerNav = styled.div`
     border-bottom: 1px solid rgba(0, 0, 0, .2)
   }
   transform: ${props => props.show ? "translateX(0)" : "translateX(100%)"}
-  transition: transform 0.2s;
+ 
 
 `
 
