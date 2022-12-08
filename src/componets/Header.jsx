@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 
 const Header = () => {
-  const[ burgerStatus, setBurgerStatus ] = useState(false)
+  //const[ burgerStatus, setBurgerStatus ] = useState(false)
   return (
     <Container>
       <a>
@@ -21,14 +21,16 @@ const Header = () => {
       <RightMenu>
           <a href='#'>SHOP</a>
           <a href='#'>TESLA ACCOUNT</a>
-          <CustomMenu onClick={() => setBurgerStatus(true)}>
+          <CustomMenu //</RightMenu>onClick={() => setBurgerStatus(true)}/
+          >
             <MenuIcon />
           </CustomMenu>
 
       </RightMenu>
       <BurgerNav show={burgerStatus}>
         <CloseWrapper>
-            <CustomClose onClick={() => setBurgerStatus(false)} />
+            <CustomClose //onClick={() => setBurgerStatus(false)}
+             />
         </CloseWrapper>
         
         <li><a href='#'>Existing Inventory</a></li>
