@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 
 const Header = () => {
-  const[burgerStatus, setBurgerStatus] = useState(false)
+  const[ burgerStatus, setBurgerStatus ] = useState(false)
   return (
     <Container>
       <a>
