@@ -4,3 +4,7 @@ tthis is the tesla clone using react js
 ![Screenshot (34)](https://user-images.githubusercontent.com/92708967/206339856-a3cbf496-bce2-4309-828b-9314564fbf82.png)
 ![Screenshot (33)](https://user-images.githubusercontent.com/92708967/206339865-9e1addb1-facd-47b7-b5e5-056235152606.png)
 ![Screenshot (24)](https://user-images.githubusercontent.com/92708967/206339874-1ea89afb-5cdb-4108-aaa0-3d5863605671.png)
+
+
+
+clone!
